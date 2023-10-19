@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+/* navegador nuevo */
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    background-color: white;
+  }
+  
+  .logo img{
+    max-width: 120px;
+    height: auto;
+  }
+  
+  .navmenu{
+    display: flex;
+  }
+  
+  .navmenu a{
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+  }
+  
+  .navmenu a:hover{
+    color: #ee1c47;
+  }
+  
+  .nav-icon{
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-icon i{
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+  }
+  
+  .nav-icon i:hover{
+    transform: scale(1.1);
+    color: #EE1C47;
+  }
+  
+  #menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+    
+  }
+  @media(max-width:890px){
+    header{
+        top: 0;
+        padding: 20px 3%;
+        transition: .4s;
+    }
+  }
+  
+  @media(max-width:750px){
+    
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 30px;
+        transition: all .42s;
+    }
+  
+    #menu-icon{
+      display: flex;
+      
+    }
+  
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+  
+    .navmenu.open{
+        right: 0;
+    }
+  }
+  /* final del navegador nuevo  */
+
+
+
+  /* ESTILO PRODUCTOS */
+  #producto1{
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+#producto1 h2{
+    font-size: 50px;
+}
+
+#producto1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#producto1 p{
+    color: #088178;
+}
+#producto1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    position: relative;
+}
+
+#producto1 .pro img{
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+#producto1 .pro img:hover{
+    opacity: .85;
+}
+
+#producto1 .pro .des{
+    text-align: center;
+    padding: 10px 0;
+}
+
+#producto1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+} 
+
+#producto1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#producto1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #088178;
+}
+
+#producto1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+a{
+    text-decoration: none;
+}
+  /* FINAL ESTILO PRODUCTOS */
+
+
+
+
+
+
+  /* FOOTER */
+  .footer__bar {
+    padding: 2rem 1rem;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 50px;
+    cursor: pointer;
+  }
+
+  .socialmedia a{
+    color: black;
+  }
+
+  .socialmedia a:hover{
+    color: var(--text-light);
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-light);
+     
+  }
+  /* FINAL DE FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* inicializa media query */
+
+@media (max-width:799px) {
+    #producto1 .pro-container{
+        justify-content: center;
+    }
+
+    #producto1 .pro{
+        margin: 15px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 477px) {
+    #producto-1 .pro{
+        width: 100%;
+    }
+}

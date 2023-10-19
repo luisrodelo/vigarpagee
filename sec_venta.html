@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="estilos/talla7.css">
+    <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css">
+    <link rel="stylesheet" href="splide-4.1.3/dist/js/splide.min.js">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/stylo_compra.css">
+    <link rel="stylesheet" href="estilos/estylo.css">
+    <title>VIGAR | GORRA TALLA 7</title>
+</head>
+<body>
+
+   
+
+
+    <!-- prodcuto de venta -->
+
+    <section id="prodetails" class="seccion-p1">
+        <div class="single-pro-image">
+            <img src="img/TALLA 7/05CA6E0E-961D-4675-BC72-D4316C5C1DFE_180x180.jpg" width="100%" id="MainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/TALLA 7/image_3a80559f-fea7-42ad-b7bc-987c1b6fbb74_1080x1066.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/TALLA 7/image_7d6fa555-2b92-4c99-8228-ff539593a8ff_1512x1013.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/TALLA 7/image_b7dc7b99-142d-4614-b3b2-7205a97d06f1_180x196.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / T-shirt</h6>
+            <h4>Men's Fashion T-shirt</h4>
+            <h2>130.000</h2>
+            <select>
+                <option>Seleccione size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>L</option>
+                <option>M</option>
+                <option>S</option>
+            </select>
+
+            <input type="number" value="1">
+            <button class="normal">Add to cart</button>
+            <h4>product details</h4>
+            <span>El diseño esta inspirado en los mapas topograficos que se pueden ver las 
+                expediciones a Marte junto a las dimensiones del mismo. Pero el futurismo no 
+                solo se da por eso si no por el echo de elaborarlas en un porcenta con material
+                de caña de azucar, con el fin de eliminar los recursos finitos y constribuir a la 
+                reduccion de desechos
+            </span>
+
+        </div>
+    </section>
+    <!-- fin de producto de venta -->
+
+
+
+
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function (){
+            MainImg.src = smallimg[0].src;
+        }
+
+        smallimg[1].onclick = function (){
+            MainImg.src = smallimg[1].src;
+        }
+
+        smallimg[2].onclick = function (){
+            MainImg.src = smallimg[2].src;
+        }
+
+        smallimg[3].onclick = function (){
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+
+  <script src="main/script.js"></script>
+
+</body>
+</html>
